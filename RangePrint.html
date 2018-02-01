@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Range Print</title>
+	<script type="text/javascript">
+		function Rangeprint(startpt, endpt, iter){
+			for (var i = startpt; i <= endpt; i += iter) {
+				console.log(i)
+			}
+		}
+		Rangeprint(2, 10, 2);
+
+		function Rangeprintextr (startpt, endpt, iter){
+			if(!endpt){
+				endpt = startpt;
+				startpt = 0;
+			}
+			if(!iter){
+				iter = 1;
+			}
+			for (var i = startpt; i <= endpt; i += iter) {
+				console.log(i)
+			}
+		}
+		Rangeprintextr(4, 8)
+		Rangeprintextr(4)
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>
